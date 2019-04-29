@@ -8,19 +8,14 @@ public class Bank
     private String email;
     private int phoneNumber;
 
-    public void setAccountNumber(int accountNumber)
-    {
-        this.accountNumber = accountNumber;
-    }
-
     public int getAccountNumber()
     {
         return accountNumber;
     }
 
-    public void setBalance(double balance)
+    public void setAccountNumber(int accountNumber)
     {
-        this.balance = balance;
+        this.accountNumber = accountNumber;
     }
 
     public double getBalance()
@@ -28,9 +23,9 @@ public class Bank
         return balance;
     }
 
-    public void setName(String name)
+    public void setBalance(double balance)
     {
-        this.name = name;
+        this.balance = balance;
     }
 
     public String getName()
@@ -38,9 +33,9 @@ public class Bank
         return name;
     }
 
-    public void setEmail(String email)
+    public void setName(String name)
     {
-        this.email = email;
+        this.name = name;
     }
 
     public String getEmail()
@@ -48,17 +43,20 @@ public class Bank
         return email;
     }
 
-    public void setPhoneNumber(int phoneNumber)
+    public void setEmail(String email)
     {
-        this.phoneNumber = phoneNumber;
+        this.email = email;
     }
 
     public int getPhoneNumber()
     {
         return phoneNumber;
-
     }
 
+    public void setPhoneNumber(int phoneNumber)
+    {
+        this.phoneNumber = phoneNumber;
+    }
 
 
     public  double deposit(double deposit)
@@ -83,5 +81,22 @@ public class Bank
         newbalance = getBalance()-withdraw;
         return balance = newbalance;
 
+    }
+
+
+    public void setNewAccount(int accountNumber,String name,double balance,String email,int phoneNumber)
+    {
+        setName(name);
+        setBalance(balance);
+        setAccountNumber(accountNumber);
+        setEmail(email);
+        setPhoneNumber(phoneNumber);
+    }
+
+    public String getAccountInfo()
+    {
+      String info = "Id : " + getAccountNumber() + '\n' + "Name : " + getName() +
+        '\n' + "Balance : " + getBalance() + '\n' + "e-mail : " + getEmail() +'\n' + "Phone Number : " + getPhoneNumber();
+        return info;
     }
 }
