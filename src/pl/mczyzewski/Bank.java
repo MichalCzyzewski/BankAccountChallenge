@@ -67,9 +67,21 @@ public class Bank
         if(deposit>0)
         {
             newbalance= getBalance()+deposit;
-            return newbalance;
+            return balance=newbalance;
         }
 
      return getBalance();
+    }
+
+    public double withdraw(double withdraw)
+    {
+        if (withdraw> getBalance())
+        {
+            return getBalance();
+        }
+        double newbalance;
+        newbalance = getBalance()-withdraw;
+        return balance = newbalance;
+
     }
 }
