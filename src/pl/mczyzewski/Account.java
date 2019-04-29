@@ -19,7 +19,7 @@ public class Account
     {
         if(balance - withdrawalAmount < 0)
         {
-            System.out.println("Only " + withdrawalAmount + " available. Withdrawal not processed");
+            System.out.println("Only " + this.balance + " available. Withdrawal not processed");
         }else {
             this.balance -= withdrawalAmount;
             System.out.println("Withdrawal of " + withdrawalAmount + " processed. Remaining balance = " + this.balance);
