@@ -84,15 +84,6 @@ public class Bank
     }
 
 
-    public void setNewAccount(int accountNumber,String name,double balance,String email,int phoneNumber)
-    {
-        setName(name);
-        setBalance(balance);
-        setAccountNumber(accountNumber);
-        setEmail(email);
-        setPhoneNumber(phoneNumber);
-    }
-
     public String getAccountInfo()
     {
       String info = "Id : " + getAccountNumber() + '\n' + "Name : " + getName() +

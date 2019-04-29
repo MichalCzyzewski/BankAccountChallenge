@@ -29,7 +29,7 @@ public class Main
         System.out.println();
         System.out.println("*******************************");
         System.out.println();
-        System.out.println("From account Id; 1 and balance :" + klient.getBalance() + " withdrow - 1000 ");
+        System.out.println("From account Id; 1 and balance :1" + klient.getBalance() + " withdrow - 1000 ");
         klient.withdraw(1000);
         System.out.println();
         System.out.println("*******************************");
