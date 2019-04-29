@@ -59,9 +59,23 @@ public class Main
         Account Michal = new Account();
         Michal.withdrawal(1000);
         Michal.deposit(50);
-
         Michal.deposit(51);
         Michal.withdrawal(100);
+
+        Account anna = new Account("1", 2000, "Anna", "poczta@wp.pl", "1234321");
+        System.out.println(anna.getNumber());
+        System.out.println(anna.getBalance());
+        System.out.println(anna.getCustomerName());
+        System.out.println(anna.getCustomerEmailAddress());
+        System.out.println(anna.getCustomerPhoneNumber());
+
+        System.out.println("++++++++++");
+        Account kamil = new Account();
+        System.out.println(kamil.getNumber());
+        System.out.println(kamil.getBalance());
+        System.out.println(kamil.getCustomerName());
+        System.out.println(kamil.getCustomerEmailAddress());
+        System.out.println(kamil.getCustomerPhoneNumber());
 
     }
 }

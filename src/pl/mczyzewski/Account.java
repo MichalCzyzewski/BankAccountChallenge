@@ -2,12 +2,29 @@ package pl.mczyzewski;
 
 public class Account
 {
+
+
     private String number;
     private double balance;
     private String customerName;
     private String customerEmailAddress;
     private String customerPhoneNumber;
 
+    public Account()
+    {
+        this("null",0.0,"Default Name","Default Adress","Default Phone Number");
+        System.out.println("Empty constructor called");
+    }
+
+    public Account(String number, double balance, String customerName, String customerEmailAddress, String customerPhoneNumber)
+    {
+        System.out.println("Account constructor with parameters called");
+        this.number = number;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.customerEmailAddress = customerEmailAddress;
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
     public void deposit(double depositAmount)
     {
         this.balance+=depositAmount;

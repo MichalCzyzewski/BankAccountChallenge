@@ -8,6 +8,15 @@ public class Bank
     private String email;
     private int phoneNumber;
 
+    public Bank(int accountNumber, double balance, String name, String email, int phoneNumber)
+    {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public int getAccountNumber()
     {
         return accountNumber;
