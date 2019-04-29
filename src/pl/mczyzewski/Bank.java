@@ -58,4 +58,18 @@ public class Bank
         return phoneNumber;
 
     }
+
+
+
+    public  double deposit(double deposit)
+    {
+        double newbalance;
+        if(deposit>0)
+        {
+            newbalance= getBalance()+deposit;
+            return newbalance;
+        }
+
+     return getBalance();
+    }
 }
