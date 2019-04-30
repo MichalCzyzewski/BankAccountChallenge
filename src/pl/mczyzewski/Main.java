@@ -77,5 +77,9 @@ public class Main
         System.out.println(kamil.getCustomerEmailAddress());
         System.out.println(kamil.getCustomerPhoneNumber());
 
+        Account Mich = new Account("Mich","poczta@wo.pl","12342");
+        System.out.println( Mich.getNumber() + " of "+Mich.getCustomerName() + " same " + Mich.getCustomerEmailAddress());
+
+
     }
 }
