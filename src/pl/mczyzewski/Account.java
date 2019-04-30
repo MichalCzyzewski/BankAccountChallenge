@@ -25,6 +25,16 @@ public class Account
         this.customerEmailAddress = customerEmailAddress;
         this.customerPhoneNumber = customerPhoneNumber;
     }
+
+
+    public Account(String customerName, String customerEmailAddress, String customerPhoneNumber)
+    {
+        this("9999",2.44,customerName,customerEmailAddress,customerPhoneNumber);
+        this.customerName = customerName;
+        this.customerEmailAddress = customerEmailAddress;
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
+
     public void deposit(double depositAmount)
     {
         this.balance+=depositAmount;
